@@ -1,0 +1,358 @@
+/* ── Google Font & Variables ── */
+:root {
+    --purple: #7c3aed;
+    --purple-light: #ede9fe;
+    --purple-dark: #5b21b6;
+    --text-dark: #111111;
+    --text-mid: #555555;
+    --text-light: #999999;
+    --border: #e0e0e0;
+    --bg: #ffffff;
+    --bg-soft: #f9f8ff;
+}
+
+/* ── Reset & Base ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg);
+}
+
+section {
+    padding: 60px 40px;
+}
+
+/* ── Navigation ── */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-mid);
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: var(--purple);
+}
+
+/* ── Hero ── */
+#hero {
+    text-align: center;
+    padding: 80px 40px;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-soft);
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: var(--purple-light);
+    color: var(--purple);
+    font-size: 13px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    color: var(--text-dark);
+}
+
+.highlight {
+    color: var(--purple);
+}
+
+.hero-sub {
+    font-size: 16px;
+    color: var(--text-mid);
+    max-width: 520px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: var(--purple);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-secondary {
+    background-color: var(--bg);
+    color: var(--purple);
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid var(--purple);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--purple-dark);
+}
+
+.btn-secondary:hover {
+    background-color: var(--purple-light);
+}
+
+/* ── Section Label ── */
+.section-label {
+    font-size: 12px;
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* ── About ── */
+#about {
+    border-bottom: 1px solid var(--border);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.about-text p {
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.8;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.stat-card {
+    background-color: var(--purple-light);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 6px;
+}
+
+.stat-card p {
+    font-size: 13px;
+    color: var(--purple-dark);
+}
+
+/* ── Skills ── */
+#skills {
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-soft);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+.skill-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    background-color: var(--bg);
+}
+
+.skill-card h4 {
+    font-size: 13px;
+    color: var(--purple);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background-color: var(--purple-light);
+    color: var(--purple-dark);
+    border: 1px solid #ddd6fe;
+}
+
+/* ── Projects ── */
+#projects {
+    border-bottom: 1px solid var(--border);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-card:hover {
+    border-color: var(--purple);
+}
+
+.project-tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background-color: var(--purple-light);
+    color: var(--purple);
+    width: fit-content;
+    font-weight: 500;
+}
+
+.project-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.project-card p {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.7;
+    flex: 1;
+}
+
+.project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.project-link {
+    font-size: 13px;
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* ── Contact ── */
+#contact {
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-soft);
+}
+
+.contact-box {
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-box h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.contact-box p {
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.7;
+}
+
+.contact-links {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.contact-links a {
+    font-size: 14px;
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+    color: var(--text-light);
+    border-top: 1px solid var(--border);
+}
