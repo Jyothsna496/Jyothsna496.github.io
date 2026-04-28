@@ -1,199 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Jyothsna R | IT Engineering Student</title>
     <link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+
+<script>
+    lucide.createIcons();
+</script>
 
 <body>
 
-    <!-- NAVIGATION -->
 <nav>
-    <div class="nav-logo">Portfolio</div>
+    <span class="nav-logo">Jyothsna R</span>
     <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li> <!-- ADDED -->
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="themeIcon">☀️</span>
+    </button>
 </nav>
 
-    <!-- HERO SECTION -->
-<section id="hero">
-    <div class="hero-badge">Open to Internships</div>
-    <h1>Hi, I'm a <span class="highlight">IT Engineering</span> Student</h1>
-    <p class="hero-sub">2nd year IT Engineering student passionate about 
-    Software Development, Python, Web Development and AI/ML.</p>
-    <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-secondary">Contact Me</a>
+<section id="home">
+    <div class="hero-content">
+        <div class="hero-left">
+            <h1 class="hero-name">Hi, I'm Jyothsna R</h1>
+            <h2 class="hero-role">Information Technology Engineering Student</h2>
+
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
+
+            <div class="hero-tags">
+                <span class="htag">Python</span>
+                <span class="htag">Java</span>
+                <span class="htag">DSA</span>
+                <span class="htag">MySQL</span>
+                <span class="htag">HTML/CSS</span>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="photo-frame">
+                <img src="photo.jpeg" alt="Jyothsna R">
+            </div>
+        </div>
     </div>
 </section>
 
-   <!-- ABOUT SECTION -->
 <section id="about">
-    <p class="section-label">About Me</p>
-    <div class="about-grid">
-        <div class="about-text">
-            <h2>Who am I?</h2>
-            <p>I'm a 2nd year Information Technology Engineering 
-            student with a passion for building tech solutions 
-            and deriving insights from data.</p>
-            <br>
-            <p>I enjoy working on projects at the intersection 
-            of software development and database management. 
-            Currently seeking internships in Software Development, 
-            Python, Web Development, Backend and AI/ML.</p>
+    <div class="section-inner">
+        <div class="section-head">
+            <span class="section-tag">About</span>
+            <h2>A little about me</h2>
         </div>
-        <div class="about-stats">
-            <div class="stat-card">
-                <h3>2nd</h3>
-                <p>Year of Study</p>
-            </div>
-            <div class="stat-card">
-                <h3>10+</h3>
-                <p>Technologies</p>
-            </div>
-            <div class="stat-card">
-                <h3>IT</h3>
-                <p>Engineering</p>
-            </div>
-            <div class="stat-card">
-                <h3>5+</h3>
-                <p>Roles Targeted</p>
-            </div>
-        </div>
-    </div>
-</section>
-        
 
-   <!-- SKILLS SECTION -->
-<section id="skills">
-    <p class="section-label">Skills</p>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <h4>Languages</h4>
-            <div class="skill-tags">
-                <span class="tag">C</span>
-                <span class="tag">Java</span>
-                <span class="tag">Python</span>
-                <span class="tag">HTML</span>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I’m a 2nd year IT Engineering student who enjoys building stuff that actually works. From full-stack web apps to data-driven projects, I like turning ideas into something real.</p>
+
+                <p>I spend most of my time experimenting, building, and improving, whether it's refining a project or exploring new ideas.</p>
+
+                <p>Outside of academics, I actively participate in hackathons and design challenges, competing with students across top institutes and pushing myself to think faster and build smarter.</p>
             </div>
-        </div>
-        <div class="skill-card">
-            <h4>Data & Analytics</h4>
-            <div class="skill-tags">
-                <span class="tag">NumPy</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">Matplotlib</span>
-            </div>
-        </div>
-        <div class="skill-card">
-            <h4>Database</h4>
-            <div class="skill-tags">
-                <span class="tag">SQL</span>
-                <span class="tag">DBMS</span>
-                <span class="tag">JDBC</span>
-            </div>
-        </div>
-        <div class="skill-card">
-            <h4>CS Fundamentals</h4>
-            <div class="skill-tags">
-                <span class="tag">DSA</span>
-                <span class="tag">OOPs</span>
-                <span class="tag">COA</span>
+
+            <div class="skills-wrap">
+                <div class="skills-row">
+
+                    <div class="skill-group">
+                        <span class="skill-group-label">Languages</span>
+                        <div class="skill-pills">
+                            <span>C</span><span>Java</span><span>Python</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <span class="skill-group-label">Backend</span>
+                        <div class="skill-pills">
+                            <span>Flask</span><span>JDBC</span><span>Servlets</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <span class="skill-group-label">Database</span>
+                        <div class="skill-pills">
+                            <span>MySQL</span><span>SQL</span><span>DBMS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <span class="skill-group-label">Data Analysis</span>
+                        <div class="skill-pills">
+                            <span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <span class="skill-group-label">CS Core</span>
+                        <div class="skill-pills">
+                            <span>DSA</span><span>OOPs</span><span>COA</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <span class="skill-group-label">Tools</span>
+                        <div class="skill-pills">
+                            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Eclipse</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-   <!-- PROJECTS SECTION -->
+<!-- ✅ FIXED EDUCATION SECTION -->
+<section id="education">
+    <div class="section-inner">
+        <div class="section-head">
+            <span class="section-tag">Education</span>
+            <h2>My Academic Journey</h2>
+        </div>
+
+        <div class="edu-item">
+            <h3>B.Tech in Information Technology</h3>
+            <p>Manipal Institute of Technology, Bengaluru</p>
+            <span>2024 – 2028</span>
+        </div>
+
+        <div class="edu-item">
+            <h3>Class XII (PCMB)</h3>
+            <p>MES College of Arts, Commerce and Science</p>
+            <span>2022 – 2024 | 93%</span>
+        </div>
+
+        <div class="edu-item">
+            <h3>Class X</h3>
+            <p>Stella Maris Girls High School</p>
+            <span>2022 | 91%</span>
+        </div>
+    </div>
+</section>
+
 <section id="projects">
-    <p class="section-label">Projects</p>
-    <div class="projects-grid">
-
-        <!-- Project Card 1 -->
-        <div class="project-card">
-            <span class="project-tag">Java + Database</span>
-            <h3>Student Bank Management System</h3>
-            <p>Console-based banking app with account creation, 
-            deposits, withdrawals, transfers and transaction 
-            history using Java and JDBC.</p>
-            <div class="project-techs">
-                <span class="tag">Java</span>
-                <span class="tag">JDBC</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">OOPs</span>
-            </div>
-            <a href="#" class="project-link">View on GitHub →</a>
+    <div class="section-inner">
+        <div class="section-head">
+            <span class="section-tag">Projects</span>
+            <h2>What I've built</h2>
         </div>
 
-        <!-- Project Card 2 -->
-        <div class="project-card">
-            <span class="project-tag">Python + Data</span>
-            <h3>Data Analysis Project</h3>
-            <p>Exploratory data analysis on a real-world dataset —
-            cleaning, visualization and insight extraction 
-            using Python libraries.</p>
-            <div class="project-techs">
-                <span class="tag">Python</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">NumPy</span>
-                <span class="tag">Matplotlib</span>
-            </div>
-            <a href="#" class="project-link">View on GitHub →</a>
-        </div>
+        <div class="projects-grid">
 
-        <!-- Project Card 3 -->
-        <div class="project-card">
-            <span class="project-tag">Java + Database</span>
-            <h3>Library Management System</h3>
-            <p>Full CRUD system to manage books, issue and return 
-            records, and fine calculations with a connected 
-            MySQL database.</p>
-            <div class="project-techs">
-                <span class="tag">Java</span>
-                <span class="tag">JDBC</span>
-                <span class="tag">SQL</span>
-                <span class="tag">DBMS</span>
+            <div class="project-card">
+                <div class="project-card-top">
+                    <div class="project-icon">💼</div>
+                    <div class="project-links-row">
+                        <a href="https://github.com/Jyothsna496/job-tracker-app" target="_blank" class="icon-link">GitHub →</a>
+                    </div>
+                </div>
+                <h3>Job Application Tracker</h3>
+                <p>Full stack web app to track internship applications with login, CRUD operations, and analytics dashboard.</p>
             </div>
-            <a href="#" class="project-link">View on GitHub →</a>
-        </div>
 
+            <div class="project-card">
+                <div class="project-card-top">
+                    <div class="project-icon">🌐</div>
+                    <div class="project-links-row">
+                        <a href="https://Jyothsna496.github.io" target="_blank" class="icon-link">Live →</a>
+                        <a href="https://github.com/Jyothsna496/Jyothsna496.github.io" target="_blank" class="icon-link">GitHub →</a>
+                    </div>
+                </div>
+                <h3>Personal Portfolio</h3>
+                <p>Responsive portfolio with dark/light mode, animations and custom UI built from scratch.</p>
+            </div>
+
+        </div>
     </div>
 </section>
 
-   <!-- CONTACT SECTION -->
 <section id="contact">
-    <p class="section-label">Contact</p>
-    <div class="contact-box">
-        <h2>Let's Connect</h2>
-        <p>I'm actively looking for internship opportunities. 
-        Feel free to reach out for collaborations or just 
-        to say hi!</p>
-        <a href="jyothsnaravi04@gmail.com" class="btn-primary">
-            Send me an Email
-        </a>
-        <div class="contact-links">
-            <a href="https://github.com/yourusername" 
-               target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" 
-               target="_blank">LinkedIn</a>
+    <div class="section-inner contact-inner">
+        <span class="section-tag">Contact</span>
+        <h2>Let's connect</h2>
+        <p class="contact-desc">
+            Looking for opportunities to build, learn, and work on real-world projects — feel free to reach out.
+        </p>
+
+        <div class="contact-row">
+
+            <a href="tel:+917406560741" class="contact-chip">
+                <i data-lucide="phone"></i>
+                Phone
+            </a>
+
+            <a href="mailto:jyothsnaravi04@gmail.com" class="contact-chip">
+                <i data-lucide="mail"></i>
+                Email
+            </a>
+
+            <a href="https://github.com/Jyothsna496" target="_blank" class="contact-chip">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/jyothsna-r-182082317/" target="_blank" class="contact-chip">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
+
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>Built with HTML & CSS &nbsp;·&nbsp; 
-    IT Engineering Student &nbsp;·&nbsp; 
-    Open to Internships</p>
-</footer>
+<<script>
+function toggleTheme() {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+}
+</script>
+
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
-
 </html>
